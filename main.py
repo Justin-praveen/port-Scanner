@@ -9,7 +9,6 @@ print(Banner)
 
 def new (name):
     return socket.gethostbyname(name)
-a = new(input("Enter hostname :"))
 
 print("...................................................................")
 print("IP is {}".format(a))
@@ -39,5 +38,14 @@ except socket.gaierror:
 except socket.error:
    print("Please Try someTimes")
    sys.exit()
+
+
+
+#it will be executes first
+
+if __name__ == "__main__":
+   a = new(input("Enter hostname :"))
+   
+
    
 
