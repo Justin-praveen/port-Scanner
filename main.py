@@ -3,12 +3,12 @@ import pyfiglet
 import socket
 import sys
 
-#figle for Banner
-Banner = pyfiglet.figlet_format("JUSTIN PRAVEEN")
-print(Banner)
-
 def new (name):
     return socket.gethostbyname(name)
+
+
+a = new(input("Enter hostname :"))
+
 
 print("...................................................................")
 print("IP is {}".format(a))
@@ -44,8 +44,8 @@ except socket.error:
 #it will be executes first
 
 if __name__ == "__main__":
-   a = new(input("Enter hostname :"))
-   
+   Banner = pyfiglet.figlet_format("JUSTIN PRAVEEN")
+   print(Banner)
 
    
 
